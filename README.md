@@ -1,0 +1,1 @@
+# rails_for_property_management
