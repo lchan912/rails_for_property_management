@@ -1,0 +1,8 @@
+<h1>Add a new Property </h1>
+<%= form_for @property, url: user_properties_path do |f| %>
+  <%= f.text_field :street, placeholder:'Street' %>
+  <%= f.text_field :suite, placeholder: 'Suite' %>
+  <%= f.text_field :city, placeholder: 'City' %>
+  <%= f.text_field :zip, placeholder: 'Zip' %>
+  <%= f.submit "Add Property" %>
+<% end %>

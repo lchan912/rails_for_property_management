@@ -1,0 +1,12 @@
+<h1>User Properties</h1>
+
+<ul>
+<% @properties.each do |property| %>
+  <li><%= property.street %></li>
+  <li><%= property.suite %></li>
+  <li><%= property.city %></li>
+  <li><%= property.zip %></li>
+<% end %>
+</ul>
+
+<%= render partial: 'properties/create', locals: { property: @property } %>

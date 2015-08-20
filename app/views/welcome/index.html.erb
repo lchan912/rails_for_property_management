@@ -1,0 +1,13 @@
+<h1>Welcome to LoWorries</h1>
+<h2>Property Management Solution</h2>
+
+<% if !logged_in %>
+<h3>Get Started. It's Free.</h3>
+<p>Already have an account? <%= link_to "Sign In", login_path %></p>
+
+<h3>Sign Up</h3>
+
+<%= render partial: 'users/create', locals: {user: @user} %>
+<% end %>
+
+<%= link_to 'Your Profile', user_path(@user) %>
